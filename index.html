@@ -1,0 +1,160 @@
+<style>
+  .head{
+
+   color:white;
+    background-color:black;
+  }
+ .head h1{
+  text-align:center;
+  }
+  #question_container
+  {
+    width:auto;
+    height:auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-left:25px;
+    margin-right:20px;
+    border-radius:5px;
+  }
+  #submit
+  {
+    
+  background-color: orange; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+margin-bottom:20px;
+  border-radius:4px;
+
+  }
+  #next{
+    background-color: green; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+margin-left:10px;
+  border-radius:4px;
+  margin-bottom:200px;
+
+  }
+  li
+  {
+    display:block;
+    padding:10px;
+    text-align:left;
+  }
+  #title
+  {
+    margin-left:10px;
+  }
+  #submit{
+   margin:5px;
+   padding:15px;
+  }
+ ul
+{
+    
+    
+    border-width:1px;
+    list-style-type:none;
+    
+    padding-left: 0pt;
+}
+.correct
+{
+  height:40px;
+  width:120px;
+  background-color:#ccffcc;
+  text-align:center;
+  margin-bottom:20px;
+  margin-left:10px;
+color:green;
+  font-size:30px;
+}
+.incorrect
+{
+  height:40px;
+  width:120px;
+  background-color:#ffc2b3;
+  text-align:center;
+  margin-bottom:20px;
+  margin-left:10px;
+color:red;
+  font-size:30px;
+}
+ #answersheet
+  {
+    width:auto;
+    height:auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-left:25px;
+    margin-right:20px;
+    border-radius:5px;
+    display:none;
+  }
+  .akey{
+    padding:20px;
+    font-size:20px;
+
+  }
+   #restart{
+    background-color: blue; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+margin-left:30px;
+  border-radius:4px;
+  display:none;
+  margin-top:20px;
+
+
+  }
+  fieldset {
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-block-start: 0;
+    padding-block-end: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    border: none;
+    min-inline-size: min-content;
+}
+ 
+  </style>
+<div class="head">
+<h1 id="quiz">Quiz</h1>
+</div>
+<div id="question_container">
+<h2 id="title"></h2>
+<div id="wrapper">
+  <fieldset id="hi">
+<ul id="options">
+
+</ul>
+  </fieldset>
+</div>
+<div id="res">
+<p id="result"></p>
+</div>
+<button id="submit">Submit</button>
+<button id="next">Next</button>
+</div>
+<h2 id="key"></h2>
+<div id="answersheet">
+  
+  </div>
+  <button id="restart">Restart</button>
+<script src="index.js"></script>
+
